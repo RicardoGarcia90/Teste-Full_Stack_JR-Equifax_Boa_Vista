@@ -1,0 +1,11 @@
+.peopleContainer {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+}
+
+.peopleContainer h2,
+h3,
+p {
+  color: red;
+}
