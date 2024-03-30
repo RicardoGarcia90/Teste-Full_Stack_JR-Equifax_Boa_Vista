@@ -1,11 +1,6 @@
-.peopleContainer {
-  height: 50%;
-  width: 100%;
-  background-color: white;
-}
-
-.peopleContainer h2,
-h3,
-p {
-  color: red;
+.peopleList {
+  background-color: black;
+  list-style: none;
+  color: white;
+  width: 10rem;
 }

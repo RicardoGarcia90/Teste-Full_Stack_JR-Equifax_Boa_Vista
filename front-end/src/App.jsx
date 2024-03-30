@@ -1,4 +1,4 @@
-import './App.css';
+import classes from './App.module.css';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { useEffect, useState } from 'react';
@@ -49,8 +49,13 @@ function App() {
 
   return (
     <>
-      <h1>Título do Projeto</h1>
-      {content}
+      <section className={classes.header}>
+        <h1>Star Wars: The search...</h1>
+      </section>
+      <section className={classes.inputFilter}>
+        <input type="text" placeholder="Pesquisar..." />
+      </section>
+      <section className={classes.peopleSection}>{content}</section>
     </>
   );
 }

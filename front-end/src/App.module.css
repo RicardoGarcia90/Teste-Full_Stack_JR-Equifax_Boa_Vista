@@ -1,0 +1,27 @@
+.header {
+  height: 10rem;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  color: green;
+  font-size: 2.4rem;
+}
+
+.inputFilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.inputFilter input {
+  border: 1px solid black;
+  border-radius: 9px;
+  padding: 0.4rem 0.8rem;
+}

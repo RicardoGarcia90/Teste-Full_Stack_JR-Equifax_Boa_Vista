@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import People from './People';
 
+import classes from './PeopleMovieList.module.css';
+
 const PeopleMovieList = ({ peopleData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -10,15 +12,13 @@ const PeopleMovieList = ({ peopleData }) => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = peopleData.slice(indexOfFirstItem, indexOfLastItem);
 
-  console.log(currentItems);
-
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
 
   return (
     <>
-      <ul>
+      <ul className={classes.peopleContainer}>
         {currentItems.map((person) => (
           <People
             key={person.id}
