@@ -12,8 +12,6 @@ const PeopleMovieList = ({ peopleData }) => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = peopleData.slice(indexOfFirstItem, indexOfLastItem);
 
-  console.log(currentItems);
-
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };

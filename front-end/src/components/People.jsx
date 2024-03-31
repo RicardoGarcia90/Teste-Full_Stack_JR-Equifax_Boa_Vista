@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import classes from './People.module.css';
 
 const People = ({ name, birthYear, height, mass }) => {
-  const [favorites, setFavorites] = useState([]);
-
   const handleAddButton = () => {
-    const newFavorites = { name, birthYear, height, mass };
-    setFavorites([...favorites, newFavorites]);
-  };
+    const newFavorite = { name, birthYear, height, mass };
+    const favoritesFromStorage =
+      JSON.parse(localStorage.getItem('favorites')) || [];
+    const updatedFavorites = [...favoritesFromStorage, newFavorite];
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
 
-  console.log(favorites);
+    console.log('Adicionado!');
+  };
 
   return (
     <>
