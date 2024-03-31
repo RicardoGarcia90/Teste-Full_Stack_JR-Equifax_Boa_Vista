@@ -1,6 +1,26 @@
 .peopleList {
-  background-color: black;
+  width: 15rem;
+  background-color: #ecf1c1;
   list-style: none;
+  color: #28333c;
+  padding: 1rem;
+  border-radius: 2rem;
+
+  position: relative;
+}
+
+.buttonAdd {
+  position: absolute;
+  top: 15px;
+  left: 230px;
+
+  background-color: #34796a;
+  border: none;
   color: white;
-  width: 10rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+.buttonAdd:hover {
+  cursor: pointer;
 }

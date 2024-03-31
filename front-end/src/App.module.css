@@ -1,15 +1,13 @@
 .header {
   height: 10rem;
   width: 100%;
-  background-color: black;
-  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .header h1 {
-  color: green;
+  color: #34796a;
   font-size: 2.4rem;
 }
 
@@ -21,7 +19,18 @@
 }
 
 .inputFilter input {
-  border: 1px solid black;
+  border: 0.5px solid #34796a;
   border-radius: 9px;
-  padding: 0.4rem 0.8rem;
+  padding: 1rem 1.8rem;
+  background-color: #010102;
+  color: #34796a;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.peopleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -12,6 +12,8 @@ const PeopleMovieList = ({ peopleData }) => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = peopleData.slice(indexOfFirstItem, indexOfLastItem);
 
+  console.log(currentItems);
+
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -23,19 +25,21 @@ const PeopleMovieList = ({ peopleData }) => {
           <People
             key={person.id}
             name={person.name}
-            birthYear={person.birth_year}
+            birthYear={person.birthYear}
             height={person.height}
             mass={person.mass}
           />
         ))}
       </ul>
-      {currentPage == 2 && (
-        <button onClick={() => handlePageChange(1)}>{'< 1'}</button>
-      )}
+      <div className={classes.buttonsPage}>
+        {currentPage == 2 && (
+          <button onClick={() => handlePageChange(1)}>{'< 1'}</button>
+        )}
 
-      {currentPage == 1 && (
-        <button onClick={() => handlePageChange(2)}>{'2 >'}</button>
-      )}
+        {currentPage == 1 && (
+          <button onClick={() => handlePageChange(2)}>{'2 >'}</button>
+        )}
+      </div>
     </>
   );
 };
