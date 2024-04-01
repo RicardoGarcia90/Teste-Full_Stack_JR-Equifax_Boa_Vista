@@ -22,10 +22,16 @@ const PeopleMovieList = ({ peopleData }) => {
         {currentItems.map((person) => (
           <People
             key={person.id}
+            id={person.id}
             name={person.name}
             birthYear={person.birthYear}
             height={person.height}
             mass={person.mass}
+            gender={person.gender}
+            hair={person.hair}
+            eye={person.eye}
+            created={person.created}
+            url={person.url}
           />
         ))}
       </ul>

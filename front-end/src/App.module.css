@@ -2,13 +2,20 @@
   height: 10rem;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .header h1 {
-  color: #34796a;
+  color: yellow;
   font-size: 2.4rem;
+}
+
+.header h2,
+.header h3 {
+  color: yellow;
 }
 
 .inputFilter {
@@ -19,13 +26,13 @@
 }
 
 .inputFilter input {
-  border: 0.5px solid #34796a;
   border-radius: 9px;
   padding: 1rem 1.8rem;
-  background-color: #010102;
-  color: #34796a;
-  text-align: left;
   font-size: 1rem;
+}
+
+.inputFilter p {
+  color: white;
 }
 
 .peopleSection {

@@ -1,15 +1,43 @@
 import React, { useState } from 'react';
 import classes from './People.module.css';
+import axios from 'axios';
 
-const People = ({ name, birthYear, height, mass }) => {
-  const handleAddButton = () => {
-    const newFavorite = { name, birthYear, height, mass };
-    const favoritesFromStorage =
-      JSON.parse(localStorage.getItem('favorites')) || [];
-    const updatedFavorites = [...favoritesFromStorage, newFavorite];
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+const People = ({
+  id,
+  name,
+  birthYear,
+  height,
+  mass,
+  gender,
+  hair,
+  eye,
+  created,
+  url,
+}) => {
+  const handleAddButton = async () => {
+    const newFavorite = {
+      id,
+      name,
+      birthYear,
+      height,
+      mass,
+      gender,
+      hair,
+      eye,
+      created,
+      url,
+    };
 
-    console.log('Adicionado!');
+    try {
+      const response = await axios.post(
+        'http://localhost:5000/favorites',
+        newFavorite
+      );
+
+      console.log('Favorito adicionado com sucesso:', response.data);
+    } catch (error) {
+      console.error('Erro ao adicionar favorito: ', error);
+    }
   };
 
   return (
@@ -21,6 +49,9 @@ const People = ({ name, birthYear, height, mass }) => {
             <p>Nascimento: {birthYear}</p>
             <p>Altura: {height}</p>
             <p>Peso: {mass}</p>
+            <p>Gênero: {gender}</p>
+            <p>Cor do cabelo: {hair}</p>
+            <p>Cor dos olhos: {eye}</p>
           </li>
           <button onClick={handleAddButton} className={classes.buttonAdd}>
             +
