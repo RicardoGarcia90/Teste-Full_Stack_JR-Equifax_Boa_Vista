@@ -3,13 +3,17 @@ import axios from 'axios';
 import classes from './Favorites.module.css';
 import { Link } from 'react-router-dom';
 
+import PeopleMovieList from '../components/PeopleMovieList';
+
 function Favorites() {
   const [favorites, setFavorites] = useState([]);
+  const [isLoading, setIsloading] = useState(false);
 
   const fetchFavoritesData = async () => {
+    setIsloading(true);
     try {
       const response = await axios.get('http://localhost:5000/favorites');
-      const data = response.data;
+      const data = response.data.favorites;
 
       const favPeopleMovie = data.map((favCharacter) => ({
         id: favCharacter.id,
@@ -25,26 +29,30 @@ function Favorites() {
       }));
 
       setFavorites(favPeopleMovie);
+      console.log(favorites);
+
+      setIsloading(false);
     } catch (error) {
       console.log('Ocorreu um erro ao obter os dados:', error);
     }
-
-    console.log(favorites);
   };
 
   useEffect(() => {
     fetchFavoritesData();
   }, []);
 
+  let content;
+
+  if (favorites.length > 0) {
+    content = <PeopleMovieList peopleData={favorites} />;
+  }
+
+  if (isLoading) content = <p>Carregando...</p>;
+
   return (
     <div className={classes.titulo}>
       <h1>Página de favoritos</h1>
-      {favorites.map((fav) => (
-        <div key={fav.id}>
-          <p>{fav.name}</p>
-          {/* Renderizar outros dados relevantes aqui */}
-        </div>
-      ))}
+      <section>{content}</section>
       <Link to={'/'}>Voltar</Link>
     </div>
   );

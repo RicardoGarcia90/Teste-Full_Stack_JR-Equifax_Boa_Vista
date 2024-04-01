@@ -8,19 +8,3 @@
 
   position: relative;
 }
-
-.buttonAdd {
-  position: absolute;
-  top: 15px;
-  left: 230px;
-
-  background-color: #34796a;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 1rem;
-}
-
-.buttonAdd:hover {
-  cursor: pointer;
-}

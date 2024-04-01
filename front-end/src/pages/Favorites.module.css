@@ -1,3 +1,17 @@
-.titulo h1{
-  color: white
+.titulo h1 {
+  color: white;
+}
+
+.favList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.favList li {
+  list-style: none;
+  color: white;
+  background-color: red;
 }
