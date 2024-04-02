@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import PeopleMovieList from '../components/PeopleMovieList';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import classes from '../Home.module.css';
+import classes from './Home.module.css';
 import { FavoriteContext } from '../contexts/FavoriteContext';
 
 import { Link } from 'react-router-dom';
@@ -25,7 +25,8 @@ function Home({ people, isLoading }) {
       <section className={classes.header}>
         <h1>Star Wars: The search...</h1>
         <h2>
-          Quer saber tudo sobre o universo Star Wars? Encontrar aqui você vai!!!
+          Gostaria de saber tudo sobre o universo Star Wars? Encontrar aqui você
+          vai!!!
         </h2>
         <h3>Faça uma busca pelo seu personagem preferido abaixo:</h3>
       </section>

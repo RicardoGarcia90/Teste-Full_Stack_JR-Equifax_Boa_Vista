@@ -25,8 +25,8 @@ function Favorites() {
         name: favCharacter.name,
         gender: favCharacter.gender,
         birthYear: favCharacter.birth_year,
-        hair: favCharacter.hair_color,
-        eye: favCharacter.eye_color,
+        hair: favCharacter.hair,
+        eye: favCharacter.eye,
         height: favCharacter.height,
         mass: favCharacter.mass,
         created: favCharacter.created,
@@ -57,8 +57,8 @@ function Favorites() {
   return (
     <>
       <ToastContainer />
-      <div className={classes.titulo}>
-        <h1>Página de favoritos</h1>
+      <div className={classes.favContainer}>
+        <h1>Seus favoritos</h1>
         <section className={classes.inputFilter}>
           <div className={classes.inputContainer}>
             <Link to={'/'}>
@@ -76,7 +76,7 @@ function Favorites() {
             </div>
           </div>
         </section>
-        <section>{content}</section>
+        <section className={classes.favListContainer}>{content}</section>
       </div>
     </>
   );

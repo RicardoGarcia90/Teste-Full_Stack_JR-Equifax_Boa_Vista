@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'StarWarsFont';
+  src: url('../assets/Starjedi.ttf') format('truetype');
+}
+
 .header {
   height: 10rem;
   width: 100%;
@@ -6,16 +11,24 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-top: 6rem;
 }
 
 .header h1 {
   color: yellow;
+  font-family: 'StarWarsFont', 'sans-serif';
   font-size: 2.4rem;
 }
 
 .header h2,
 .header h3 {
   color: yellow;
+  font-family: 'StarWarsFont', 'sans-serif';
+  font-weight: 100;
+}
+
+.header h3 {
+  margin-bottom: 4rem;
 }
 
 .inputFilter {
@@ -44,13 +57,13 @@
 
 .pesquisarButton {
   border: none;
-  color: #ecf1c1;
+  color: yellow;
   padding: 0.7rem 1.8rem;
   border-radius: 0.9rem;
 }
 
 .inputContainer p {
-  color: #ecf1c1;
+  color: yellow;
 }
 
 .inputFilter input {
@@ -85,7 +98,7 @@
 
 .inputContainer a {
   text-decoration: none;
-  color: #ecf1c1;
+  color: yellow;
 }
 
 .peopleSection {

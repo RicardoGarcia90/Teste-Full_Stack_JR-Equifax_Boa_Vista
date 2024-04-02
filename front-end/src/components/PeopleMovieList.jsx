@@ -16,6 +16,22 @@ const PeopleMovieList = ({ peopleData }) => {
     setCurrentPage(page);
   };
 
+  let pageButton;
+
+  if (peopleData.length > 10) {
+    pageButton = (
+      <div className={classes.buttonsPage}>
+        {currentPage == 2 && (
+          <button onClick={() => handlePageChange(1)}>{'< 1'}</button>
+        )}
+
+        {currentPage == 1 && (
+          <button onClick={() => handlePageChange(2)}>{'2 >'}</button>
+        )}
+      </div>
+    );
+  }
+
   return (
     <>
       <ul className={classes.peopleContainer}>
@@ -35,15 +51,7 @@ const PeopleMovieList = ({ peopleData }) => {
           />
         ))}
       </ul>
-      <div className={classes.buttonsPage}>
-        {currentPage == 2 && (
-          <button onClick={() => handlePageChange(1)}>{'< 1'}</button>
-        )}
-
-        {currentPage == 1 && (
-          <button onClick={() => handlePageChange(2)}>{'2 >'}</button>
-        )}
-      </div>
+      {pageButton}
     </>
   );
 };
