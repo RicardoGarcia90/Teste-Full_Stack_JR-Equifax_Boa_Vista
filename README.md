@@ -13,6 +13,9 @@ Uma outra função da aplicação é a possibilidade de adicionar e remover um p
 Para efetuar a criação da página de favoritos utilizei o armazenamento local com localhost.
 Busquei utilizar algumas técnicas de HTML, CSS e Javascript para criar efeitos e estilo de botões e estética do site buscando melhorar a experiência de uso.
 
+Vídeo de funcionamento:
+https://youtu.be/KcYbkhBogyA
+
 ---
 
 # 2- Utilizando os requisitos da API de favoritos do exercício 1, crie o modelo relacional para um banco de dados.
