@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import classes from './People.module.css';
 import axios from 'axios';
 import Favorites from '../pages/Favorites';
@@ -17,7 +17,13 @@ const People = ({
   created,
   url,
 }) => {
-  const { addToFavorites, removeFromFavorites } = useContext(FavoriteContext);
+  const {
+    addToFavorites,
+    removeFromFavorites,
+    notifySucces,
+    notifyInfo,
+    notifyWarn,
+  } = useContext(FavoriteContext);
   const [adicionado, setAdicionado] = useState(localStorage.getItem(id));
 
   const handleAddButton = async () => {
@@ -35,24 +41,6 @@ const People = ({
     };
 
     try {
-      const existingFavoritesResponse = await axios.get(
-        'http://localhost:5000/favorites'
-      );
-      const existingFavorites = existingFavoritesResponse.data;
-
-      console.log(existingFavorites.favorites);
-
-      if (existingFavorites.favorites.length > 0) {
-        const itemAlreadyExists = existingFavorites.favorites.some(
-          (favorite) => favorite.id === newFavorite.id
-        );
-
-        if (itemAlreadyExists) {
-          console.log('Este item já está na lista de favoritos.');
-          return;
-        }
-      }
-
       const response = await axios.post(
         'http://localhost:5000/favorites',
         newFavorite
@@ -61,6 +49,7 @@ const People = ({
       console.log('Favorito adicionado com sucesso:', response.data);
       addToFavorites(newFavorite);
       setAdicionado(true);
+      notifySucces();
 
       localStorage.setItem(id, true);
     } catch (error) {
@@ -77,6 +66,7 @@ const People = ({
       removeFromFavorites(id);
       setAdicionado(false);
       localStorage.removeItem(id);
+      notifyInfo();
     } catch (error) {
       console.error('Erro ao remover favorito: ', error);
     }

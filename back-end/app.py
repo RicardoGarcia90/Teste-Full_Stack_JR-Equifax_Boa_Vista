@@ -1,10 +1,14 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
 favorites = []
+
+@app.route('/')
+def index():
+  return redirect('/favorites')
 
 @app.route('/favorites', methods=['GET'])
 def get_favorites():
@@ -39,9 +43,7 @@ def delete_favorites(id):
     for indice, favorite in enumerate(favorites):
        if favorite.get('id') == id:
           del favorites[indice]
-
-          
-
     return jsonify({'message': 'Favorito excluido com sucesso!'}, favorites)
 
-app.run(port=5000, host='localhost', debug=True)
+if __name__ == '__main__':
+    app.run(port=5000, host='localhost', debug=True)

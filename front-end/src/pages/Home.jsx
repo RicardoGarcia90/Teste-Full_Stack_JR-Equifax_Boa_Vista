@@ -1,10 +1,16 @@
-import React from 'react';
+import { useContext } from 'react';
 import PeopleMovieList from '../components/PeopleMovieList';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import classes from '../Home.module.css';
+import { FavoriteContext } from '../contexts/FavoriteContext';
 
-import classes from '../App.module.css';
 import { Link } from 'react-router-dom';
 
 function Home({ people, isLoading }) {
+  const { addToFavorites, removeFromFavorites, notifySucces } =
+    useContext(FavoriteContext);
+
   let content;
 
   if (people.length > 0) {
@@ -15,6 +21,7 @@ function Home({ people, isLoading }) {
 
   return (
     <>
+      <ToastContainer />
       <section className={classes.header}>
         <h1>Star Wars: The search...</h1>
         <h2>
@@ -23,10 +30,23 @@ function Home({ people, isLoading }) {
         <h3>Faça uma busca pelo seu personagem preferido abaixo:</h3>
       </section>
       <section className={classes.inputFilter}>
-        <div>
-          <input type="text" />
-          <button>Pesquisar</button>
-          <Link to={'/favorites'}>Favoritos</Link>
+        <div className={classes.inputContainer}>
+          <div className={classes.pesquisarContainer}>
+            <input type="text" />
+
+            <div
+              className={`${classes.pesquisarButton} ${classes.button_slide} ${classes.slide_right}`}
+            >
+              Pesquisar
+            </div>
+          </div>
+
+          <Link
+            className={`${classes.button_slide} ${classes.slide_right}`}
+            to={'/favorites'}
+          >
+            Favoritos
+          </Link>
         </div>
       </section>
       <section className={classes.peopleSection}>{content}</section>

@@ -2,6 +2,83 @@
   color: white;
 }
 
+.inputFilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #34796a;
+  width: 50%;
+  border-radius: 0.9rem;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.homeIcon {
+  color: #ecf1c1;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.pesquisarContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.pesquisarButton {
+  border: none;
+  color: #ecf1c1;
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.9rem;
+}
+
+.inputContainer p {
+  color: #ecf1c1;
+}
+
+.pesquisarContainer input {
+  border: none;
+  border-radius: 9px;
+  padding: 0.5rem 1.8rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.inputFilter p {
+  color: white;
+}
+
+.button_slide {
+  border: 1px solid #010102;
+  border-radius: 0.9rem;
+  padding: 0.5rem 1.8rem;
+  display: inline-block;
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #34796a;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #010102;
+}
+
+.inputContainer a {
+  text-decoration: none;
+  color: #ecf1c1;
+}
+
 .favList {
   display: flex;
   justify-content: center;
