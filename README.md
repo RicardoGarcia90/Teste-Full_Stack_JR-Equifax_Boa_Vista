@@ -11,6 +11,9 @@ Ao acessar a aplicação, você se depara com o nome "Star Wars the Search", uma
 Vídeo de funcionamento:
 https://youtu.be/KcYbkhBogyA
 
+Link da aplicação:
+https://starwarsthesearch.netlify.app/
+
 # Relatório de Testes
 
 Os testes foram realizados com utilização da biblioteca **unittest**
