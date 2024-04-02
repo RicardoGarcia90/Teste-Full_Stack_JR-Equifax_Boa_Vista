@@ -3,15 +3,9 @@ Teste técnico realizado em processo seletivo para a vaga de Desenvolvedor Full 
 
 # Descrição da Aplicação: Star Wars the Search!
 
-Essa é uma aplicação Web Full Stack desenvolvida utilizando no front-end: React.js com uso de ferramentas como axios, react-router-dom, useContext e useState. E no back-end: Python e Flask.
+Esta é uma aplicação Web Full Stack desenvolvida utilizando no front-end o React.js, com o uso de ferramentas como axios, react-router-dom, useContext e useState, e no back-end o Python e o Flask.
 
-Ao acessar a aplicação você se depara com o nome da aplicação “Star Wars the Search” uma referência a busca que pode ser realizada, e logo abaixo trago um texto explicativo sobre o que pesquisar.
-Temos um botão para pesquisar informações sobre os personagens e logo ao acessar a aplicação já trará uma listagem distribuída em 2 páginas com 10 personagens por página de todos os personagens da saga Star Wars.
-Os dados dos personagens são demonstrados por cards para facilitar a visualização e traz as principais informações de cada um.
-Para trazer as informações dos personagens efetuei uma chamada na API "https://swapi.dev/api/people/"
-Uma outra função da aplicação é a possibilidade de adicionar e remover um personagem da sua lista de favoritos, para isso basta localizar o card do personagem e clicar no símbolo + para adicionar aos Favoritos , e para remover basta clicar no símbolo – para os casos que já foram previamente adicionados.
-Para efetuar a criação da página de favoritos utilizei o armazenamento local com localhost.
-Busquei utilizar algumas técnicas de HTML, CSS e Javascript para criar efeitos e estilo de botões e estética do site buscando melhorar a experiência de uso.
+Ao acessar a aplicação, você se depara com o nome "Star Wars the Search", uma referência à busca que pode ser realizada. Logo abaixo, há um texto explicativo sobre o que pesquisar. Há um botão para pesquisar informações sobre os personagens. Ao acessar a aplicação, já é possível ver uma listagem distribuída em duas páginas, com 10 personagens por página, de toda a saga Star Wars. Os dados dos personagens são apresentados em cards para facilitar a visualização e incluem as principais informações de cada um. Para obter as informações dos personagens, foi realizada uma chamada na API "https://swapi.dev/api/people/". Outra função da aplicação é a possibilidade de adicionar e remover um personagem da sua lista de favoritos. Para isso, basta localizar o card do personagem e clicar no símbolo "+" para adicionar aos Favoritos, e para remover, basta clicar no símbolo "-" para os casos em que já foram previamente adicionados. Para a criação da página de favoritos, foi utilizado o armazenamento local com localhost. Foram empregadas algumas técnicas de HTML, CSS e JavaScript para criar efeitos e estilos de botões, melhorando assim a experiência de uso do site.
 
 Vídeo de funcionamento:
 https://youtu.be/KcYbkhBogyA
