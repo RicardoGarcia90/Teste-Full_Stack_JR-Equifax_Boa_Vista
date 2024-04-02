@@ -43,7 +43,8 @@ def delete_favorites(id):
     for indice, favorite in enumerate(favorites):
        if favorite.get('id') == id:
           del favorites[indice]
-    return jsonify({'message': 'Favorito excluido com sucesso!'}, favorites)
+          break 
+    return jsonify({'message': 'Favorito excluido com sucesso!', 'favorites': favorites})
 
 if __name__ == '__main__':
     app.run(port=5000, host='localhost', debug=True)
