@@ -1,4 +1,5 @@
 # Teste-Full_Stack_JR-Equifax_Boa_Vista
+
 Teste técnico realizado em processo seletivo para a vaga de Desenvolvedor Full Stack Júnior na empresa Equifax Boa Vista
 
 # Descrição da Aplicação: Star Wars the Search!
@@ -9,6 +10,28 @@ Ao acessar a aplicação, você se depara com o nome "Star Wars the Search", uma
 
 Vídeo de funcionamento:
 https://youtu.be/KcYbkhBogyA
+
+# Relatório de Testes
+
+Os testes foram realizados com utilização da biblioteca **unittest**
+
+## Resultados dos Testes Unitários na API criada
+
+- **Teste 1 - Metodo GET**: Passou
+
+![teste1](https://lh3.googleusercontent.com/pw/AP1GczPs8jnRi6rwzKFN26A9u5WfU66-AglpO0n9pbS26m_GB65RNyQz_X1BTl7Ak5cv6E2dBiKs__Coe4ewVSLDSAWh2Jzgg-mruXwERvrGPqnVFcueos50JmyA07ujtwC-cQxLSrOuTAslFK9l7J-915NEpF1C7xUwU54bgDpfXF1L9xbHocGKZXTkpBXJ6TTvg5F_tABsz6zwUAHOYcWDYSiNT59Wfms-ilApKcg4m4dMdcvmmkvnUbqtmaZb4Ov7dfq7o8VVvjSUTD75J3uqONYeDyzL-RbCsYD78ZO2mIQSxD_ezHM4pHkB5f4ba39Esx-f2LY5SIY1ZuEuuAjDadLHOo6HSqId0weDryJbU_D5n3osdj85aEyOA4xWKuK8G4W18vUsBSs-o7v8IP6FcYWY2SOyBmlUbEcWnkfyG-SWNAGZvttjlTGOOGoZNJXg5Vmmhr2ig26lRUYtf8Xog5M4BQgwv10xLILIfRSCjyZD6CfLq2eM-K8PAhuV35SHTNVJ5xxUgtUpdfLlvujDs0AmezCuqejf1ATVePwvVBJUSLuXU0CAYwPPotU7kbHwFYlHUCtwSf3f3dwvttGsVracrUUnfU1hQ7-z4owcYGlSxBf1tmYxZJ4trwk0hp-ZJllHQczcezC_SViRU0OJ-t9PN4SSimsCZgod_29jPpSE5Q1lGsxqx1UTRnP-Pkp2C6wVy01jsW-tiLDXdS5cQ5X3TuO0dAznDzQpY9FJuYkUzIrOyCO--mKOxVM7FX9RhNXqcV0TQ1XOlBRiqNNUo4b3eWqHQQlCSLz037P16N8MsYv9xbvAFWHvzhombOKqej35a0kfHFciFRJnvqpPrNV7nzmL61ZJDYWtIQae7Q8jvf-Tig7fzZTkxI_vT4FOpSFyqyVPmxsJaL8fgzKLP5BplRf9c_f1yWz2QMVCj4l03IEDgeaBGR_ZndjPhvo=w797-h132-s-no-gm?authuser=0)
+
+- **Teste 2 - Metodo POST**: Passou
+
+![teste2](https://lh3.googleusercontent.com/pw/AP1GczPJPIjazQs9kjoRbJIeksJliZWKr_xWhN5dNQeRRqMCZH9-HrL94QmQPueO1oRl1pNVoT5SmxREk-_awiAuwUH0cwr_NHBvVrEMhZlG8qMBYvRArvfvoJIhkybd1Oklmtw9-aO0uL-pV2eqKmdPDez__WmLKT4DBrY8alNpeylaDvfrTRNubRpx5hlqxmdLyEdupTm1juYCzthXJT0cuXY2cE_JMtYahrologFEfsfU7lfeLDSolJfG3wE0OPzAzsFES5UcM5mReUyOnJeRy7I0ZJo3vbGWtSJoY6BE2mMnocSDzMcjCotUi6cgKMOMlll6JBTzrKrtz_uR3AFCtw2GUUqYXqKxspGvrhKiMgIb-T3dM-xG2Vne-iNFhAf1gSKPcqYcUHCNSNltnG94f0uwdisfdJywP7RLGxOziCZEwCJIGUvnCvJVTRKjBAxtR3T95F68rUYGk8g3xxkitSX8PMCBu64CT6pyx5RfgwRqvXxrArNzYvRqQ8HlpvwrsegU0cRGz-tYdVlBB6dJLCgCfK1Dt4Mj4NLvlAO0_GZCBLgkEe4fu_vAAUMo2KttTrXOKd_d-LTcqRFlpMFZvHHSLj5uOd6dFEeKkxwwO_8JZPfKn08AHTwapeAbzsLmfecNezHKhFCruc_FY9u4tZeIJvDJ6fRIKkD6Ap9R7wjyMtunOuPIPUjJqLw8sMrZdjbuhXHR2sAZ05TnGyMfUf-wzIjLD3VZuRDwcbfe9kizMywQuUBdedLt4YjwwxVjczrGlyl_eGH4VidjlCMAIurm7ia7mrEHaSpCuF8vhjnafdtdmt20ByhXVcrlSn_xt51DzifXf_yPIXLiAM5uGShB4ZcSCzOSl0VlWr9ySZWbrzyGtmqYB6hmAzJH-yKJr2c9kCfn_QgzSBVhgsjtb5fllcxrEod102FMKhnRwjpVOR8b7kxZngnB_W8BeGI=w797-h133-s-no-gm?authuser=0)
+
+- **Teste 3 - Metodo DELETE**: Passou
+
+![teste3](https://lh3.googleusercontent.com/pw/AP1GczNA1dbtWJN6wPOu_kOcC5XLi6WZqOqS3rFMHq7aEUI97dt6k2MoEvaoRTPbaXJgj7CNBXwvfuJGv1L21KZ-zbOp372G7-o-mzWN7kKfTki_ZU04sbz3fmLm3p2OIWlECLcUHXeYB4lz5-bCPfNHY7TnCgv3-LUvXRZgVPvrkZCIhn4r1ERVCsK9hkEVwA23BSi9M0PGfkSg6D0Fio2t46B4Zbzu3NOd5kpVCu3ZdLtK5tP-2LOZ9tzBIOOAiJDJAFvj8S-IVhbZtB8vd15vy08QAHlPo6E3a-b8mmLc-L1o39qfgMooiHYqiLN7gKgGjddNwBK4BB517spPS9kPxr6D4tTRmyEBPRpEoXpBaPHdBRsVHdeW5cVU0SV2Jbz_aGAoVw1VeR25Pjr6zROKrdBw7BslRKWL66P1tZKbfVxEkh-DNRAlO1td7lpgObOy4ZqUFyPzmkzYh74Ro4L7s2TSWS6Gg8BXA8YOBq4YXjGXLxi6vG65NCmQvreFWD5zGx1Z_--AbjI4GSMb-46l_Z5frpTmXApDSsgYwa7gBsWz682FZTgnECIweEgVPzcc5KgQfasWm7pmd8FVSJJ6YP8LW9qH-elwAAXbjDPDQ3RmaRFFjj2MRt4FrddI_7tWro8ESm7ktqt2M8LoQP1md12RJPQbdjeHlVLzW7YgUWbnxnZBSA89SqsYgIyye1pmsQm56f2LP35aLvlmlYpLHc0Ff32i-9hAvgHdKSgIWMbXQGyYJ_uhyodu70hsjf3fg_fFOis5rMrLLb2lvuz7SIB1g0v_AXmRdiWcO77SWTo7suVfwALwgnB0zQ--lJ14H-pfbqbh4yAHiPpkwJUVfhG-8__yHXobH_fcRDaIJIflFbbb5SjLy99vLxo78I9_MAPnumR0ATBPW88dIc6MDrd0Bqgn8oZxe2qTlHljUNgXiMx0vV8lrAH_2Z7Dua0=w793-h135-s-no-gm?authuser=0)
+
+**Resultado Final:** Todos os testes passaram com sucesso.
+
+![todosTestes](https://lh3.googleusercontent.com/pw/AP1GczM2WF8nTR9eQujnKMarGvWvxg-JKBTEkqv-uYg_Vhnsyn-Uu7PeBKx5OrV98Lb6IhtpYOpAGKsTarT9i7WQwyv0F01Xr8LSqK9vqTmUPVWnDaXLh9-xsDrrZwuYWiDwOx90a6tAXWyME6HRrKLRcpW_gT9TUAkc38jn-8b7MmLOm8TD1vWRGXYjyEu4hreed-jB_yETzFLWPuHJI5NDrvjf26aHZVRMtemaceYPCn1FwFvNQOJLhsS3_Eu2zAKqhj_Ynu_Pzz8ahrisbaRwiK4ntDjMH6w00v0O4VMNxv5hQboi2owZcAsBTtVk6n0Vy8JA0PFGrUwyhjiN5we9FOAJELku-ADXKFQMNygZbzFyqeW-AePeSMOkb-bgy1bMhtkMp0ycy58HM8T-9s7f5OW3RhOBo-mNpGBShABbJF_WV5tQGlZDSN_ami2iT7o9XLvjdU_c3Enm9O4K0mw__8ndTYVHNKByFC42J5n0YosxlCAcK63KoPhvY9SRhbCqwZACFo6twBwsJVveD6VVlVnkUBTRjbM16xiMhks_bQEowimW_FmmSdatT0b3Do4BwzLA-8vD0WXx5oDv9Z0kQd7sz_q0pjrOVDiyFGjSNNkeUKElxUeoHl3inlkJ2bWSS4XClXmaQ1noFXn7bcSmojQ2eTP4EK5jMOpJY7nvTk73IYXkIAJwFpTU6nqFV5eIY4BqT022lsoK5HlF940JuKL6jrcpd7-yYhKMrXGwdJLToINLJlSTeQAzFtfPjhv05hPkeh_-sNyeUBhBelAnAZ3FlUt24g4aqtCujXpygrGabMnf4k4mTsHzPLSln8_oQ-R5xrj1K3m9_DuP--Xy7Vg8RiPfjgbZ0n2tC2Fns5j1rW0Mx_gvpM4l0HNgBjLGbaNLDeyki4nEM5Sj1KEShgNXVcML_D0i4h4ye78j2uJkBAlDOljHR_OTjCnceAo=w795-h133-s-no-gm?authuser=0)
 
 ---
 
@@ -40,12 +63,14 @@ Criação tabela Favoritos
 ---
 
 # 3- Descreva o processo de troca de chaves por trás do SSL.
+
 Basicamente quando um usuário acessa um site HTTPS, o navegador solicita ao servidor do site que se identifique. O servidor responde enviando seu certificado SSL. Este certificado é validado pelo navegador para garantir sua autenticidade. Durante essa validação, o navegador recebe apenas a chave pública do certificado, que é usada para estabelecer uma sessão criptografada durante esse sessão.
 Apenas o servidor, pode descriptografar essa chave de sessão, e a partir desse momento, todas as comunicações entre o navegador e o servidor são criptografadas usando essa chave de sessão compartilhada, garantindo então a segurança dos dados transmitidos.
 
 ---
 
 # 4- Descreva o que é DNS e como ele é utilizado na internet.
+
 O DNS é uma forma de converter nomes de domínios legíveis por pessoas para endereço IP (legível para máquina).
 Basicamente o DNS é um registro que contém os nomes de sites e seus respectivos endereços IP para que os computadores e smartphones por exemplo conectados na internet consigam se comunicar entre si.
 Quando um usuário abre o navegador e digita o endereço URL referente ao domínio de um site, ele envia uma requisição na rede para encontrar o respectivo IP do servidor que o armazena.
